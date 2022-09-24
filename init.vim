@@ -1,5 +1,8 @@
 set number
 set relativenumber
+set autoindent
+set tabstop=4
+
 
 if (has("termguicolors"))
  set termguicolors
@@ -70,6 +73,8 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 nnoremap 0 ^
+nnoremap <C-j> ddp
+nnoremap <C-k> ddkP
 
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
